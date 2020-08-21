@@ -23,6 +23,8 @@ echo "*************** Container logs ***************"
 echo "az container logs --name bootstrap-container --resource-group $azureResourceGroup --follow"
 echo "*************** Connection Information ***************"
 
+sleep 30m
+
 # Application Insights (using preview extension)
 az extension add -n application-insights
 instrumentationKey=$(az monitor app-insights component show --app tt-app-insights --resource-group $azureResourceGroup --query instrumentationKey -o tsv)
