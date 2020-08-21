@@ -107,7 +107,7 @@
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/master/deployment/azuredeploy-logic-apps.json"
+					"uri": "https://raw.githubusercontent.com/neilpeterson/talk-tailwind-deployment/main/azuredeploy-logic-apps.json"
 				},
 				"parameters": {
 					"azureDevOpsOrgName": {
@@ -135,7 +135,7 @@
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/master/deployment/azuredeploy-status.json"
+					"uri": "https://raw.githubusercontent.com/neilpeterson/talk-tailwind-deployment/main/azuredeploy-status.json"
 				},
 				"parameters": {
 					"siteName": {
