@@ -56,46 +56,9 @@ There are two ways to kick off a deployment (pick one).
 
 Use this button to deploy the Tailwind Traders application.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite-learning-paths-training-ops%2Fmaster%2Fdeployment%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%neilpeterson%2Ftalk-tailwind-deployment%main%2Fazuredeploy.json" target="_blank">
  <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-
-### Option 2: Deploy via the az command line tool
-
-If you'd prefer to deploy using the az command line tool, you can:
-
-1) create a ```params.json``` file whose contents look like this:
-
-```
-{
-  "servicePrincipalId": {
-          "value": "YOUR_PRINCIPAL_ID"
-  },
-  "servicePrincipalSecret": {
-          "value": "YOUR_PRINCIPLE_SECRET"
-  },
-  "azureDevOpsOrgName": {
-          "value": "NEW_AZDEVOPS_ORG_NAME"
-  },
-  "emailAddress": {
-          "value": "YOUR EMAIL ADDRESS"
-  }
-}
-```
-
-(The servicePrincipal values will be those created in the earlier step in this doc. The azureDevOpsOrgName is the name of a new Azure DevOps organization that will be created to be used in the demo. Do not use an existing Azure DevOps organization name).
-
-2) Create the resource group (choose a new resource group name to put the demo resources in and also which Azure region and subscription you'd like them to run in):
-
-```
-az group create --name RESOURCE_GROUP_NAME --location PREFERRED_AZURE_LOCATION --subscription YOUR_SUBSCRIPTION_NAME
-```
-
-3) Kick off the deploy:
-
-```
-az group deployment create --resource-group RESOURCE_GROUP_NAME --template-uri https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/master/deployment/azuredeploy.json  --parameters @params.json --subscription YOUR_SUBSCRIPTION_NAME
-```
 
 ## Connect to deployment
 

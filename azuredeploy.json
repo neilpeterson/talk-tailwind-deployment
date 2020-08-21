@@ -66,7 +66,7 @@
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/master/deployment/azuredeploy-tailwind.json"
+					"uri": "https://raw.githubusercontent.com/neilpeterson/talk-tailwind-deployment/main/azuredeploy-tailwind.json"
 				},
 				"parameters": {
 					"servicePrincipalId": {
@@ -85,7 +85,7 @@
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/master/deployment/azuredeploy-azd.json"
+					"uri": "https://raw.githubusercontent.com/neilpeterson/talk-tailwind-deployment/main/azuredeploy-azd.json"
 				},
 				"parameters": {
 					"azureDevOpsOrgName": {
